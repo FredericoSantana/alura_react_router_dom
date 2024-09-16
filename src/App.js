@@ -11,8 +11,8 @@ function App() {
       <Menu/>
       <Routes>
         <Route path="/" element={<MainPage/>}>
-          <Route path="/" element={<Main/>}/>
-          <Route path="/about" element={<About/>}/>
+          <Route index element={<Main/>}/>
+          <Route path="about" element={<About/>}/>
         </Route>
 
         <Route path="*" element={<div>Página não encontrada</div>}/>
