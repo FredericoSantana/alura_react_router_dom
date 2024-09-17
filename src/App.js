@@ -4,6 +4,7 @@ import About from "./pages/About";
 import Menu from "./components/Menu";
 import Footer from "./components/Footer";
 import MainPage from "./components/MainPage";
+import Post from "./pages/Post";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" element={<MainPage/>}>
           <Route index element={<Main/>}/>
           <Route path="about" element={<About/>}/>
+          <Route path="posts/:id" element={<Post/>}/>
         </Route>
 
         <Route path="*" element={<div>Página não encontrada</div>}/>
