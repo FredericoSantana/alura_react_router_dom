@@ -1,6 +1,6 @@
-import styles from './Post.module.css';
+import styles from './PostCard.module.css';
 
-const Post = ({post}) => {
+const PostCard = ({post}) => {
   return (
     <div className={styles.post}>
       <img className={styles.capa} src={`/assets/posts/${post.id}/capa.png`} alt="Imagem de capa do post"/>
@@ -10,4 +10,4 @@ const Post = ({post}) => {
   );
 };
 
-export default Post;
+export default PostCard;
